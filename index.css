@@ -5,9 +5,10 @@
 
 body {
     margin: 0;
-    background-color: #1B244A;
+    background-color: #213237ff;
     background-image: url("basket-silhouette.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
 }
 
