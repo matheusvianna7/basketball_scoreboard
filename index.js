@@ -1,5 +1,7 @@
 let scoreHome = document.getElementById("score-home")
 let scoreCountHome = 0
+let scoreGuest = document.getElementById("score-guest")
+let scoreCountGuest = 0
 
 function addHome(num){
     if (num == 1){
@@ -10,10 +12,14 @@ function addHome(num){
         scoreCountHome += 3
     }
     scoreHome.textContent = scoreCountHome
+    if(scoreCountHome > scoreCountGuest){
+        document.getElementById("score-home").style.border = "2px solid #ADA89Dff"
+        document.getElementById("score-guest").style.border = "none"
+    } else if(scoreCountHome === scoreCountGuest){
+        document.getElementById("score-home").style.border = "none"
+        document.getElementById("score-guest").style.border = "none"
+    }
 }
-
-let scoreGuest = document.getElementById("score-guest")
-let scoreCountGuest = 0
 
 function addGuest(num){
     if (num == 1){
@@ -24,6 +30,13 @@ function addGuest(num){
         scoreCountGuest += 3
     }
     scoreGuest.textContent = scoreCountGuest
+    if(scoreCountGuest > scoreCountHome){
+        document.getElementById("score-guest").style.border = "2px solid #ADA89Dff"
+        document.getElementById("score-home").style.border = "none"
+    } else if(scoreCountGuest === scoreCountHome){
+        document.getElementById("score-guest").style.border = "none"
+        document.getElementById("score-home").style.border = "none"
+    }
 }
 
 function newGame(){
@@ -31,4 +44,6 @@ function newGame(){
     scoreCountGuest = 0
     scoreHome.textContent = scoreCountHome
     scoreGuest.textContent = scoreCountGuest
+    document.getElementById("score-home").style.border = "none"
+    document.getElementById("score-guest").style.border = "none"
 }
