@@ -1,36 +1,28 @@
 let scoreHome = document.getElementById("score-home")
 let scoreCountHome = 0
 
-function add1home(){
-    scoreCountHome += 1
-    scoreHome.textContent = scoreCountHome
-}
-
-function add2home(){
-    scoreCountHome += 2
-    scoreHome.textContent = scoreCountHome
-}
-
-function add3home(){
-    scoreCountHome += 3
+function addHome(num){
+    if (num == 1){
+        scoreCountHome += 1
+    } else if(num == 2) {
+        scoreCountHome += 2
+    } else if(num == 3){
+        scoreCountHome += 3
+    }
     scoreHome.textContent = scoreCountHome
 }
 
 let scoreGuest = document.getElementById("score-guest")
 let scoreCountGuest = 0
 
-function add1guest(){
-    scoreCountGuest += 1
-    scoreGuest.textContent = scoreCountGuest
-}
-
-function add2guest(){
-    scoreCountGuest += 2
-    scoreGuest.textContent = scoreCountGuest
-}
-
-function add3guest(){
-    scoreCountGuest += 3
+function addGuest(num){
+    if (num == 1){
+        scoreCountGuest += 1
+    } else if(num == 2) {
+        scoreCountGuest += 2
+    } else if(num == 3){
+        scoreCountGuest += 3
+    }
     scoreGuest.textContent = scoreCountGuest
 }
 
