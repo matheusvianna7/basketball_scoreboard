@@ -1,0 +1,60 @@
+@font-face{
+    font-family: Timer;
+    src: url(CursedTimerULiL.ttf)
+}
+
+body {
+    margin: 0;
+    background-color: #1B244A;
+    background-image: url("basket-silhouette.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team{
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    line-height: 36px;
+    margin-bottom: 0px;
+}
+
+.score{
+    font-family: Timer;
+    text-align: center;
+    background-color: black;
+    color: #F94F6D;
+    height: 120px;
+    width: 120px;
+    font-size: 90px;
+    line-height: 140%;
+    margin: 20px;
+    padding: 2px 15px;
+    border-radius: 5px;
+}
+
+.btn-points{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+button{
+    background-color: #213237ff;
+    color: #ADA89Dff;
+    font-family: Timer;
+    border: 1px solid #ADA89Dff;
+    border-radius: 4px;
+    padding: 7px;
+}
+
+#btn-new{
+    margin-top: 20px;
+}
