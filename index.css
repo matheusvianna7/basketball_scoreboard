@@ -11,10 +11,17 @@ body {
     background-repeat: no-repeat;
     text-align: center;
 }
+@media (max-width: 1050px){
+    body{
+        background-image: none;
+    }
+}
 
 .container {
     display: flex;
     justify-content: space-around;
+    max-width: 750px;
+    margin: 0 auto;
 }
 
 .team{
